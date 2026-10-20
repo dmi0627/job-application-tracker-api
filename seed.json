@@ -1,0 +1,330 @@
+[
+  {
+    "company": "D3",
+    "role": "Backend Engineer - New Grad",
+    "location": "Los Angeles, CA (hybrid)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse — Submitted - confirmation page \"Thank you for applying\""
+  },
+  {
+    "company": "IXL Learning",
+    "role": "Software Engineer, New Grad",
+    "location": "San Mateo, CA (in-person)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse via company site — Submitted - \"Thank you for applying... application has been received\""
+  },
+  {
+    "company": "Stripe",
+    "role": "SWE, Early Career - Immediate Start",
+    "location": "SF/Seattle/NYC (pref SF>SEA>NYC)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse via stripe.com — Submitted - \"Thank you for submitting your application to Stripe\""
+  },
+  {
+    "company": "General Motors",
+    "role": "Software Engineer, AV HIL Platform and Services (Early Career), JR-202604577",
+    "location": "Sunnyvale, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Workday (account created, pw in Secure Vault) — Submitted - status \"Review\", Active"
+  },
+  {
+    "company": "TableIQ",
+    "role": "Software Engineer",
+    "location": "Fremont, CA (on-site)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Kareer Basycs",
+    "role": "Junior Java Developer",
+    "location": "Remote US",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Altimetrik",
+    "role": "Junior Java Developer",
+    "location": "Remote US",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Wandata Tech",
+    "role": "Junior Java Developer",
+    "location": "SF Bay Area (remote)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted (start immediately = Yes, per Michael)"
+  },
+  {
+    "company": "WD (Western Digital)",
+    "role": "Software Engineer, Early Career",
+    "location": "San Jose, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply (SmartRecruiters) — Submitted - EEO/GPA answers confirmed by Michael"
+  },
+  {
+    "company": "Amazon",
+    "role": "Software Development Engineer - 2026 (US), job 3177934",
+    "location": "US (incl. Irvine)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "amazon.jobs — Submitted - \"Thank you for your application\"; start date 2026-11-03"
+  },
+  {
+    "company": "Affirm",
+    "role": "Software Engineer, Early Career (SF)",
+    "location": "San Francisco, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse 8010617003 — Submitted - \"Thank you for applying to Affirm\""
+  },
+  {
+    "company": "CLEAR",
+    "role": "Software Development Engineer I",
+    "location": "Austin, TX",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse 8241829 — Submitted - \"Thank you for applying to CLEAR\""
+  },
+  {
+    "company": "SirenOpt",
+    "role": "Software Engineer (Early Career) - C++ & Systems",
+    "location": "San Leandro, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse 4452002009 — Submitted - \"Thank you for applying\""
+  },
+  {
+    "company": "Citizens Bank",
+    "role": "Software Engineer I (job 49903)",
+    "location": "Johnston, RI",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Oracle HCM — Submitted - status \"Applied\""
+  },
+  {
+    "company": "SpaceX",
+    "role": "Software Engineer (Starfall)",
+    "location": "Hawthorne, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse 8642274002 — Submitted - confirmation page"
+  },
+  {
+    "company": "Centric Software",
+    "role": "Software Engineer 1 (JR396)",
+    "location": "Campbell, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Workday (account created) — Submitted - \"Application Submitted\""
+  },
+  {
+    "company": "Luminai",
+    "role": "Forward Deployed Engineer, New Grad",
+    "location": "New York, NY (hybrid)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Ashby (essays written) — Submitted"
+  },
+  {
+    "company": "123 EDI",
+    "role": "Junior Software Developer",
+    "location": "Aventura, FL",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted - desired salary $110K"
+  },
+  {
+    "company": "Constructive Dialogue Institute",
+    "role": "Software Engineer, Early Career",
+    "location": "Remote US",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Recruitee (essays written) — Submitted - comp expectation $82K (top of $72-82K)"
+  },
+  {
+    "company": "Ascend Analytics",
+    "role": "Junior Software Engineer",
+    "location": "Boulder, CO",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "BambooHR (essay written) — Submitted - Desired Pay $91K (top of $78-91K)"
+  },
+  {
+    "company": "EDLORE",
+    "role": "Full Stack Engineer",
+    "location": "Albany, GA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Email application — Submitted via email to info@edlore.com w/ resume (LinkedIn Easy Apply was broken; draft also saved on LinkedIn)"
+  },
+  {
+    "company": "Choice Hotels",
+    "role": "Software Engineer 1 (R22450)",
+    "location": "Scottsdale, AZ",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Workday — Submitted - salary requirement $105K entered"
+  },
+  {
+    "company": "SpaceX",
+    "role": "Software Engineer, Backend (Python/C++)",
+    "location": "Hawthorne, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse 8845089002 — Submitted - confirmation page"
+  },
+  {
+    "company": "ZipRecruiter",
+    "role": "Software Engineer - New Grad",
+    "location": "Santa Monica, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Greenhouse 8127108 — Submitted - confirmation page (fresh restart, no code needed)"
+  },
+  {
+    "company": "Forge Nano",
+    "role": "Software Engineer I",
+    "location": "Thornton, CO",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Breezy HR — Submitted - \"Application Submitted\" (posted range $90-95K, no salary field)"
+  },
+  {
+    "company": "KLA",
+    "role": "Engr, Software 1 (2642693, substitute for closed 2642057)",
+    "location": "USA-NY-Remote",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Workday (new account, uniform password) — Submitted - \"Under Review\" (range $38.66-65.73/hr, no salary field)"
+  },
+  {
+    "company": "Margin (YC S23)",
+    "role": "Software Engineer, New Grad",
+    "location": "New York, NY",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "Work at a Startup — Submitted - profile complete + intro message sent; min salary $180K (top of $110-180K). NOTE: resume PDF upload failed (hidden file input); all resume content entered into profile manually instead"
+  },
+  {
+    "company": "MathWorks",
+    "role": "Associate in Engineering Development Group, Computer Engr. (17191-MCIA)",
+    "location": "Natick, MA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "MathWorks Careers (new account) — Submitted - \"Application Complete\". FOLLOW-UP: portal status \"Transcript Required\" - Michael must upload UCI transcript"
+  },
+  {
+    "company": "Epitone",
+    "role": "Software Engineer (Entry Level)",
+    "location": "San Diego, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Chekhub",
+    "role": "Junior Back End Engineer",
+    "location": "Raleigh, NC",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Clerie",
+    "role": "Associate Software Engineer (TypeScript)",
+    "location": "Provo, UT (hybrid)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Stealth Startup (Fidorn)",
+    "role": "Software Engineer",
+    "location": "Remote CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "HubIQ",
+    "role": "Software Engineer",
+    "location": "Newport Beach, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Chekhub",
+    "role": "Junior Front End Engineer",
+    "location": "Raleigh, NC",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "forREAL",
+    "role": "Full Stack Engineer",
+    "location": "Danvers, MA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Pure Interactive",
+    "role": "Software Engineer",
+    "location": "New York, NY",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Ace Recovery Group",
+    "role": "Developer / Automation Engineer",
+    "location": "Fort Lauderdale, FL",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Nexus Intelligence",
+    "role": "Forward Deployed Engineer",
+    "location": "San Francisco, CA",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Explore Logistics",
+    "role": "System Development Engineer",
+    "location": "Houston, TX",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "SynergisticIT",
+    "role": "Junior Java Programmer / AI Engineer",
+    "location": "Seattle, WA (remote)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  },
+  {
+    "company": "Odoo",
+    "role": "Junior R&D Software Engineer",
+    "location": "SF Bay Area (Brisbane)",
+    "status": "applied",
+    "date_applied": "2026-10-19",
+    "notes": "LinkedIn Easy Apply — Submitted"
+  }
+]
