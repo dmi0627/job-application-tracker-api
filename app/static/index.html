@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Job Application Tracker home">
+          <span class="brand-mark">JT</span>
+          <span>
+            <strong>Job Tracker</strong>
+            <small>Application command center</small>
+          </span>
+        </a>
+        <nav aria-label="Project links">
+          <a href="/docs">API docs</a>
+          <a href="/health">Health</a>
+          <button id="open-form-button" class="button button-primary" type="button">+ Add application</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div>
+            <p class="eyebrow">Your search, in one place</p>
+            <h1 id="page-title">Track every application without a spreadsheet.</h1>
+            <p class="hero-copy">
+              Add applications, move them through the funnel, and see where your search is
+              getting traction.
+            </p>
+          </div>
+          <div class="hero-card" aria-label="Response rate">
+            <span>Response rate</span>
+            <strong id="response-rate">—</strong>
+            <small>Applications that moved beyond wishlist/applied</small>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="Application statistics">
+          <article class="stat-card">
+            <span>Total applications</span>
+            <strong id="stat-total">—</strong>
+            <small>All records in the tracker</small>
+          </article>
+          <article class="stat-card">
+            <span>Active pipeline</span>
+            <strong id="stat-active">—</strong>
+            <small>Wishlist, applied, OA, and interview</small>
+          </article>
+          <article class="stat-card">
+            <span>Interviews</span>
+            <strong id="stat-interviews">—</strong>
+            <small>Currently at interview stage</small>
+          </article>
+          <article class="stat-card">
+            <span>Last 30 days</span>
+            <strong id="stat-recent">—</strong>
+            <small>Applications added recently</small>
+          </article>
+        </section>
+
+        <section class="panel funnel-panel" aria-labelledby="funnel-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Pipeline</p>
+              <h2 id="funnel-title">Where things stand</h2>
+            </div>
+            <span id="funnel-total" class="muted"></span>
+          </div>
+          <div id="funnel" class="funnel"></div>
+        </section>
+
+        <section id="application-form-panel" class="panel form-panel" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">New record</p>
+              <h2>Add an application</h2>
+            </div>
+            <button id="close-form-button" class="button button-ghost" type="button">Close</button>
+          </div>
+
+          <form id="application-form" class="application-form">
+            <label>
+              Company *
+              <input name="company" required maxlength="120" placeholder="e.g. Stripe" />
+            </label>
+            <label>
+              Role *
+              <input name="role" required maxlength="200" placeholder="e.g. Software Engineer" />
+            </label>
+            <label>
+              Location
+              <input name="location" maxlength="120" placeholder="e.g. Irvine, CA" />
+            </label>
+            <label>
+              Status
+              <select name="status"></select>
+            </label>
+            <label>
+              Date applied
+              <input name="date_applied" type="date" />
+            </label>
+            <label>
+              Job URL
+              <input name="job_url" type="url" placeholder="https://…" />
+            </label>
+            <label>
+              Salary min
+              <input name="salary_min" type="number" min="0" step="1000" placeholder="100000" />
+            </label>
+            <label>
+              Salary max
+              <input name="salary_max" type="number" min="0" step="1000" placeholder="140000" />
+            </label>
+            <label class="wide">
+              Notes
+              <textarea name="notes" rows="3" placeholder="Recruiter, next step, deadline, or anything worth remembering"></textarea>
+            </label>
+            <div class="form-actions wide">
+              <span id="form-error" class="error-text" role="alert"></span>
+              <button class="button button-primary" type="submit">Save application</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel" aria-labelledby="applications-title">
+          <div class="section-heading applications-heading">
+            <div>
+              <p class="eyebrow">Records</p>
+              <h2 id="applications-title">Applications</h2>
+            </div>
+            <div class="controls" aria-label="Application filters">
+              <label class="search-control">
+                <span class="sr-only">Search by company</span>
+                <input id="company-filter" type="search" placeholder="Search company…" />
+              </label>
+              <label>
+                <span class="sr-only">Filter by status</span>
+                <select id="status-filter">
+                  <option value="">All statuses</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Sort applications</span>
+                <select id="sort-filter">
+                  <option value="date_desc">Newest first</option>
+                  <option value="date_asc">Oldest first</option>
+                  <option value="company">Company A–Z</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div id="loading-state" class="empty-state">Loading applications…</div>
+          <div id="empty-state" class="empty-state" hidden>
+            <strong>No applications match.</strong>
+            <span>Try a different filter or add a new application.</span>
+          </div>
+          <div id="application-grid" class="application-grid"></div>
+
+          <div class="pagination" aria-label="Application pages">
+            <button id="previous-page" class="button button-ghost" type="button">← Previous</button>
+            <span id="page-summary" class="muted"></span>
+            <button id="next-page" class="button button-ghost" type="button">Next →</button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        Built with FastAPI, SQLAlchemy, and vanilla JavaScript. The dashboard and API use the
+        same database.
+      </footer>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>

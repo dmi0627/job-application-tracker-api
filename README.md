@@ -1,9 +1,9 @@
 # Job Application Tracker API
 
-A REST API for tracking job applications through their funnel —
-`wishlist → applied → oa → interview → offer / rejected / withdrawn` —
-built with **FastAPI**, **SQLAlchemy**, and **PostgreSQL** (SQLite locally),
-with a **pytest** suite and **Docker Compose** setup.
+A REST API and lightweight web dashboard for tracking job applications through
+their funnel — `wishlist → applied → oa → interview → offer / rejected /
+withdrawn` — built with **FastAPI**, **SQLAlchemy**, and **PostgreSQL**
+(SQLite locally), with a **pytest** suite and **Docker Compose** setup.
 
 I built this while running my own new-grad SDE job search, and I use it to
 track my real applications (the seed data is my actual search: 41 applications).
@@ -21,6 +21,14 @@ uvicorn app.main:app --reload        # http://127.0.0.1:8000
 
 Interactive API docs (auto-generated OpenAPI): <http://127.0.0.1:8000/docs>
 
+Web dashboard: <http://127.0.0.1:8000/>
+
+The dashboard uses the same API and database. It provides summary statistics,
+a visual status funnel, company/status filters, sorting, pagination, an
+add-application form, inline status changes, and delete actions. It is plain
+HTML/CSS/JavaScript served by FastAPI, so there is no separate frontend build
+step.
+
 ### Docker (PostgreSQL)
 
 ```bash
@@ -33,7 +41,7 @@ This starts PostgreSQL 16 and the API on port 8000, wired together via
 ## Tests
 
 ```bash
-pytest -q    # 10 tests, in-memory SQLite, no setup needed
+pytest -q    # 11 tests, in-memory SQLite, no setup needed
 ```
 
 ## API overview
@@ -85,12 +93,13 @@ curl http://127.0.0.1:8000/stats
 
 ```
 app/
-  main.py       # routes: CRUD, filtering/pagination, /stats, /health
+  main.py       # routes: dashboard, CRUD, filtering/pagination, /stats, /health
   models.py     # SQLAlchemy tables + ApplicationStatus enum
   schemas.py    # Pydantic request/response shapes
   database.py   # engine, session factory, get_db dependency
+  static/       # dashboard HTML, CSS, and vanilla JavaScript
 tests/
-  test_api.py   # 10 end-to-end API tests
+  test_api.py   # 11 end-to-end API/frontend tests
 seed.py         # idempotent loader for seed.json
 seed.json       # real application data (41 applications)
 Dockerfile, docker-compose.yml

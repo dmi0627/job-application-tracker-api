@@ -63,6 +63,14 @@ def test_health():
     assert response.json() == {"status": "ok"}
 
 
+def test_frontend_is_served():
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "Job Application Tracker" in response.text
+    assert client.get("/static/app.js").status_code == 200
+    assert client.get("/static/styles.css").status_code == 200
+
+
 def test_create_and_get():
     created = make_application()
     assert created["company"] == "Stripe"

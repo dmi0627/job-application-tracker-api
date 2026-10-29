@@ -4,13 +4,17 @@ A small REST API for tracking job applications through their funnel:
 wishlist -> applied -> oa -> interview -> offer / rejected / withdrawn.
 
 Run locally:  uvicorn app.main:app --reload
+Dashboard:    http://127.0.0.1:8000/
 Docs (auto):  http://127.0.0.1:8000/docs
 """
 
 from datetime import date, timedelta
+from pathlib import Path
 from typing import Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
@@ -20,6 +24,14 @@ from .database import Base, engine, get_db
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Job Application Tracker", version="1.0.0")
+
+STATIC_DIR = Path(__file__).parent / "static"
+app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+
+
+@app.get("/", include_in_schema=False)
+def dashboard():
+    return FileResponse(STATIC_DIR / "index.html")
 
 
 @app.get("/health")
